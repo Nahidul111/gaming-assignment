@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Roboto:wght@300;400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+#font-style{
+    color: #FF42A5;
+}
+
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 130px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+    width: 100%;
+    height: 45px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.logo-title{
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+/* .logo-container span{
+    color: #ff42a5;
+} */
+.nav-items-container{
+   
+    display: flex;
+    align-items: center;
+}
+.nav-items-container a{
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.title-btn{
+    display: flex;
+    padding: 5px 15px;
+    gap: 15px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+
+}
+button{
+    border: none;
+    background: none;
+
+}
+/* style banner section  */
+/* banner */
+
+
+
+.banner-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-container{
+    text-align: left;
+    background-image: url(../images/Group14.png) linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+}
+.banner-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.goat{
+    margin: 0;
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.description{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+.btn-signin{
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+}
+
+.btn-blue{
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: none;
+}
+/* online game */
+
+.online-games-container{
+    
+    height: 600px;
+    margin: 10px 50px;
+    /* margin: auto; */
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.online-games-title{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+
+}
+.funny-video{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 60px;
+
+}
+.your-day{
+    color: #534C64;
+    text-align: center;font-size: 18px;
+    font-weight: 400;
+}
+.online-game-img{
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+.online-pic{
+    justify-content: center;
+}
+.img-text{
+    color: #534C64;
+    text-align: left;
+}
+
+/* overlay section style started */
+
+.overlay{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+
+}
+.overlay button{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+.overlay p{
+    color:#FF42A5;
+}
+
+.img-wrap{
+    position: relative;
+} 
+.img-wrap:hover .overlay{
+    opacity: 1;
+    
+}
+
+/* play instant part start styles */
+
+
+.play-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1241px;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+.play-image{
+    max-width: 780px;
+    position: relative;
+}
+.first-play-pic{
+    max-width: 634px;
+}
+.second-play-pic {
+    position: absolute;
+    left: -20%;
+    bottom: -13%;
+}
+.play-description{  
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+.play-instant-container{
+   width: 341px;
+   text-align: right;
+   margin-left: 30px;
+}
+.play-content{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* rectangle area styles */
+
+.rectangle-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 27px;
+    margin-top: 130px;
+}
+.rectangle{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f7fa;
+    border-radius: 50px;
+    padding: 5px 15px;
+     
+}
+
+.rectangle a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.rectangle:hover{
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    background-color: white;
+}
+
+/* footer section styles now */
+.footer{
+    background: #0B0223;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+.footer-title-container{
+    display: flex;
+    align-items: center;
+}
+.footer-title-container .footer-title{
+    color: #FFF;
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+/* .footer-title-container span{
+    color: #ff42a5;
+} */
+.footer-container{
+    display: inline-flex;
+    padding: 10px;
+    gap: 60px;
+    /* margin-top: 50px; */
+}
+.footer-container a{
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+.footer-icon img{ 
+    height: 40px;
+    width: 40px;
+    margin: 30px;
+}
+.footer-section{
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 60px;
+}
+.footer-section a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
